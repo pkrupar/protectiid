@@ -1,0 +1,4 @@
+[build]
+  base    = "publicweb"
+  command = "yarn build"
+  publish = "publicweb/public"

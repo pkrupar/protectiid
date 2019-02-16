@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="395" viewBox="0 0 1400 395">
+  <g id="Group_5" data-name="Group 5" transform="translate(-219 -299)">
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="1400" height="395" transform="translate(219 299)" fill="#f7f7f7"/>
+    <g id="Group_4" data-name="Group 4" transform="translate(14)">
+      <text id="Generated_random_string:" data-name="Generated random string:" transform="translate(334 430)" fill="#9a9a9a" font-size="30" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Generated random string:</tspan></text>
+      <g id="Group_3" data-name="Group 3">
+        <line id="Line_2" data-name="Line 2" x2="363" transform="translate(1112.5 458.5)" fill="none" stroke="#eaeaea" stroke-width="5"/>
+        <text id="Your_domain:" data-name="Your domain:" transform="translate(1113 430)" fill="#9a9a9a" font-size="30" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Your domain:</tspan></text>
+      </g>
+      <g id="Group_2" data-name="Group 2">
+        <text id="example.com" transform="translate(1113 550)" font-size="60" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">example.com</tspan></text>
+        <g id="Group_1" data-name="Group 1">
+          <rect id="Rectangle_2" data-name="Rectangle 2" width="697" height="136" rx="2" transform="translate(334 458)" fill="#bfffbb"/>
+          <text id="_626d25ccb32f11667e32" data-name="626d25ccb32f11667e32" transform="translate(350 550)" font-size="60" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">626d25ccb32f11667e32</tspan></text>
+        </g>
+        <text id="_" data-name="@" transform="translate(1044 550)" fill="#9a9a9a" font-size="60" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">@</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

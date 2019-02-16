@@ -1,0 +1,4 @@
+node_modules/
+build/
+chrome-extension.zip
+yarn-error.log

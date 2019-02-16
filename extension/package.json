@@ -1,0 +1,37 @@
+{
+  "name": "protectiid",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.3.0",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "bestzip": "^2.1.2",
+    "fake-words": "^0.5.3",
+    "gatsby": "^2.0.118",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "react-hot-loader": "^4.6.5",
+    "webpack": "^4.29.4",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "build": "yarn remove-files && yarn copy-files && webpack --config ./webpack.config.js --mode production && yarn zip-files",
+    "remove-files": "rm -R -f ./build && rm -f ./chrome-extension.zip",
+    "copy-files": "mkdir \"./build/images/\" && cp ./index.html ./build/index.html && cp ./index.css ./build/index.css && cp ./manifest.json ./build/manifest.json && cp ./images/* ./build/images/",
+    "zip-files": "cd ./build && bestzip ../chrome-extension.zip *"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ]
+  }
+}
