@@ -3,15 +3,16 @@ import ReactDOM from "react-dom";
 
 import fake from "fake-words";
 
-function dec2hex(dec) {
-	return ("0" + dec.toString(16)).substr(-2);
-}
-
 function generateHash(length = 20) {
-	const arr = new Uint8Array(length / 2);
-	window.crypto.getRandomValues(arr);
+	// Credit: Petja Touru
+	const characters = "0123456789abcdefghijklmnopqrstuvwxyz";
+	const hash = Array.from(
+		window.crypto.getRandomValues(new Uint32Array(length))
+	)
+		.map(x => characters[x % characters.length])
+		.join("");
 
-	return Array.from(arr, dec2hex).join("");
+	return hash;
 }
 
 function randomIntFromInterval(min, max) {
@@ -264,10 +265,10 @@ class App extends React.Component {
 								}
 								disabled={isAddressLengthSelectDisabled}
 							>
-								{Array(maxAddressLength / 2)
+								{Array(maxAddressLength - 1)
 									.fill()
 									.map((nothing, index) => {
-										const value = (index + 1) * 2;
+										const value = index + 2;
 										return (
 											<option key={value} value={value}>
 												{value}

@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Protect IID",
-  "version": "1.16",
+  "version": "1.17",
   "description": "Minimalistic single-use email address generator.",
   "permissions": ["activeTab"],
   "icons": {
